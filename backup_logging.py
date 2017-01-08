@@ -4,7 +4,8 @@ import os
 import logging
 
 # Setting the basic configuration settings for the logging detail level.
-logging.basicConfig(filename='file_ex.log', level = logging.DEBUG)
+logging.basicConfig(filename='file_ex.log', level = logging.DEBUG,
+		   format = '%(asctime)s - %(levelname)s: %(message)s')
 
 # Info log to check if the file already exists
 logging.info("checking to see if the backup.zip exists")
